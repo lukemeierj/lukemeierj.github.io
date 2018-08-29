@@ -402,14 +402,11 @@ i {
 
 @media only screen and (max-width: 620px){
     .content {
-        margin-top: 14em;
+        margin-top: 12em;
     }
     #icons {
-        display: block;
-    }
-    #icons a {
-        display: inline-block;
-        height: .1em;
+        margin-top: -.5em;
+        vertical-align: top;
     }
 }
 
@@ -433,4 +430,11 @@ i {
     margin-left: 1em;
     display: inline-block;
     vertical-align: top;    
+}
+
+@media only screen and (max-width: 470px){
+    .content {
+        margin-top: 18em;
+        padding: 1em;
+    }
 }
