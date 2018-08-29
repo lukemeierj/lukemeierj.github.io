@@ -1,28 +1,5 @@
 /* STACKEDIT CSS, MODIFIED */
-@font-face{
-    font-family:Lato;
-    font-style:normal;
-    font-weight:400;
-    src:url(/fonts/lato-normal.27bd77b.woff) format("woff")
-}
-@font-face{
-    font-family:Lato;
-    font-style:italic;
-    font-weight:400;
-    src:url(/fonts/lato-normal-italic.f28f2d6.woff) format("woff")
-}
-@font-face{
-    font-family:Lato;
-    font-style:normal;
-    font-weight:600;
-    src:url(/fonts/lato-black.f80bda6.woff) format("woff")
-}
-@font-face{
-    font-family:Lato;
-    font-style:italic;
-    font-weight:600;
-    src:url(/fonts/lato-black-italic.798eafd.woff) format("woff")
-}
+
 @font-face{
     font-family:Roboto Mono;
     font-style:normal;
@@ -386,7 +363,8 @@ i {
 }
 .content {
     margin-top: 9.5em;
-    padding-top: 12px;
+    padding-top: 2em;
+    padding-bottom: 4em;
     background-color: #333;
     color: white;
     box-shadow: 0 10px 20px #333;
@@ -405,6 +383,23 @@ i {
     margin: 0;
 }
 
+.job-box {
+    width: 45%;
+    display: inline-block;
+    background-color: rgba(240,240,240,.9);
+    color: black;
+    border-radius: .1em;
+    margin: .5em;
+    padding: .4em;
+    height: 4em;
+}
+
+@media only screen and (max-width: 800px){
+    .job-box {
+        width: 95%;
+    }
+}
+
 @media only screen and (max-width: 620px){
     .content {
         margin-top: 14em;
@@ -416,4 +411,26 @@ i {
         display: inline-block;
         height: .1em;
     }
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+.grow:hover {
+    transform: scale(1.02); 
+}
+
+.employer-pic {
+    border-radius: 1em;
+    border-radius: .1em;
+    height: 4em;
+    width: 4em;
+    display: inline-block
+}
+
+.job-info {
+    width: 70%;
+    margin-left: 1em;
+    display: inline-block;
+    vertical-align: top;    
 }
