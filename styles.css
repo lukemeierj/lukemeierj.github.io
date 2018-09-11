@@ -386,7 +386,7 @@ i {
 .job-box {
     width: 45%;
     display: inline-block;
-    background-color: rgba(240,240,240,.9);
+    background-color: #dadfe5;
     color: black;
     border-radius: .1em;
     margin: .5em;
@@ -426,10 +426,13 @@ i {
 }
 
 .job-info {
-    width: 70%;
-    margin-left: 1em;
+    max-width: 43vw;
+    margin-left: .5em;
     display: inline-block;
-    vertical-align: top;    
+    vertical-align: top; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;   
 }
 
 @media only screen and (max-width: 470px){
